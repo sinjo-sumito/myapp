@@ -1,0 +1,7 @@
+.main__side
+  .h2 作業開始
+  = form_with model: [@post], html: {class: "side__contents"}, local: true do |f|
+    = f.text_field :product_name, class: 'side__contents--productname', placeholder: '品名'
+    = f.text_field :work_name, class: 'side__contents--workname', placeholder: '作業内容'
+    = f.submit 'スタート', class: 'side__contents--start'
+  
