@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    binding.pry
     Post.create(post_params)    
   end
 
