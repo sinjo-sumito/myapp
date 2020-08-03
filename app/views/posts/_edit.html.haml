@@ -1,0 +1,6 @@
+.edit
+  .h2 作業終了
+  = form_with model: [@post], html: {class: "side__contentstop"}, local: true do |f|
+    = f.text_field :quantity, class: 'side__contentstop--quantity', placeholder: '作業完了 数量'
+    = f.text_area :comments, class: 'side__contentstop--comments', placeholder: 'コメント'
+    = f.submit 'ストップ', class: 'side__contentstop--stop'
